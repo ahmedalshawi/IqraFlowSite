@@ -1,12 +1,12 @@
-# IqraFlow — Marketing Site
+# IqraFlow - Marketing Site
 
-Static marketing site for **IqraFlow** (landing, privacy, terms, support). Plain HTML + CSS + a little vanilla JS — **no build step, no frameworks**. Pages render instantly; fonts, styles and scripts are ordinary cached files under `assets/`.
+Static marketing site for **IqraFlow** (landing, privacy, terms, support). Plain HTML + CSS + a little vanilla JS - **no build step, no frameworks**. Pages render instantly; fonts, styles and scripts are ordinary cached files under `assets/`.
 
 ## Files
 
 | File | Route |
 |---|---|
-| `index.html` | `/` — landing page |
+| `index.html` | `/` - landing page |
 | `privacy.html` | `/privacy` |
 | `terms.html` | `/terms` |
 | `support.html` | `/support` |
@@ -22,15 +22,15 @@ Clean URLs (`/privacy` → `privacy.html`) are handled automatically by Cloudfla
 
 The site is fully responsive (phones from 320px wide, tablets, laptops, large monitors). Only the landing page loads JavaScript; the legal/support pages are pure HTML + CSS.
 
-## Deploy — GitHub + Cloudflare Pages
+## Deploy - GitHub + Cloudflare Pages
 
-1. **Create the repo** — on github.com, create `IqraFlowSite` (public or private), then upload everything in this folder.
-2. **Connect to Pages** — Cloudflare dashboard → *Workers & Pages* → *Create* → *Pages* → *Connect to Git* → select `IqraFlowSite`.
-3. **Build settings** — Framework preset: **None** · Build command: *(leave empty)* · Build output directory: `/`. Click **Save and Deploy**.
-4. **Custom domain** — in the Pages project → *Custom domains* → *Add* → `iqraflow.alshawi.org`. Since `alshawi.org` is already on Cloudflare, the CNAME record is created for you and HTTPS goes live within a few minutes.
+1. **Create the repo** - on github.com, create `IqraFlowSite` (public or private), then upload everything in this folder.
+2. **Connect to Pages** - Cloudflare dashboard → *Workers & Pages* → *Create* → *Pages* → *Connect to Git* → select `IqraFlowSite`.
+3. **Build settings** - Framework preset: **None** · Build command: *(leave empty)* · Build output directory: `/`. Click **Save and Deploy**.
+4. **Custom domain** - in the Pages project → *Custom domains* → *Add* → `iqraflow.alshawi.org`. Since `alshawi.org` is already on Cloudflare, the CNAME record is created for you and HTTPS goes live within a few minutes.
 
 ## Before launch
 
-- The **Notify me** form currently saves the email in the visitor's browser only (`localStorage`). Wire it to a Cloudflare Worker + KV (or a form service like Formspree) to actually collect signups — the submit logic lives in `assets/app.js` (`setupForm`).
+- The **Notify me** form currently saves the email in the visitor's browser only (`localStorage`). Wire it to a Cloudflare Worker + KV (or a form service like Formspree) to actually collect signups - the submit logic lives in `assets/app.js` (`setupForm`).
 - Replace placeholder contact emails (`hello@iqraflow.app`, etc.) and the `[jurisdiction]` note in the terms.
 - Swap store badges for real App Store / Google Play links at launch.
