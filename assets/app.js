@@ -1,4 +1,4 @@
-/* IqraFlow landing page — mobile nav, waitlist forms, FAQ accordion,
+/* IqraFlow landing page - mobile nav, waitlist forms, FAQ accordion,
    scroll reveals and the WebGL "iqra" hero. No frameworks. */
 (function () {
   'use strict';
@@ -45,7 +45,7 @@
     send.addEventListener('click', submit);
     email.addEventListener('keydown', function (e) { if (e.key === 'Enter') submit(); });
   }
-  var ERR = 'Hmm — that email doesn’t look right. Try again?';
+  var ERR = 'Hmm - that email doesn’t look right. Try again?';
   setupForm('hero-email', 'hero-send', 'hero-hint', ERR);
   setupForm('cta-email', 'cta-send', 'cta-hint', ERR);
 
