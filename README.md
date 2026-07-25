@@ -11,12 +11,18 @@ Static marketing site for **IqraFlow** (landing, privacy, terms, support). Plain
 | `terms.html` | `/terms` |
 | `support.html` | `/support` |
 | `404.html` | not-found page |
-| `icon.png` | favicon / touch icon |
+| `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png` | browser favicons |
+| `apple-touch-icon.png` | iOS home-screen icon |
+| `icon-192.png`, `icon-512.png` | installable web-app icons |
+| `icon-maskable-192.png`, `icon-maskable-512.png` | mask-safe Android/PWA icons |
+| `manifest.webmanifest` | web-app name, colours and install icons |
+| `og-image.png`, `social-square.png` | link-preview and social profile artwork |
+| `icon.png` | legacy full-size icon alias |
 | `assets/site.css` | fonts, shared styles, responsive layout |
 | `assets/app.js` | landing-page interactivity (mobile nav, waitlist form, FAQ, WebGL hero) |
 | `assets/three.min.js` | three.js (self-hosted) for the hero particle animation |
 | `assets/fonts/` | Inter, Outfit and KFGQPC Uthmanic Hafs (self-hosted) |
-| `assets/logo-128.png` | small logo used in the nav and footer |
+| `assets/logo-128.png` | IqraFlow logo used in the nav and footer |
 
 Clean URLs (`/privacy` → `privacy.html`) are handled automatically by Cloudflare Pages.
 
