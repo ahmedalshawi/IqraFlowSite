@@ -37,28 +37,36 @@
   <div class="iq-container iq-main" style="max-width: 780px; margin: 0 auto; padding: 80px 40px 110px;">
     <div style="font-family: Outfit, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2.4px; color: #F0C050; margin-bottom: 14px;">LEGAL</div>
     <h1 class="iq-h1-sub" style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 800; font-size: 46px; letter-spacing: -1.6px; color: #E8F5EE;">Privacy policy</h1>
-    <div style="font-size: 13.5px; color: #4A7A63; margin-bottom: 26px;">Last updated: 10 July 2026</div>
+    <div style="font-size: 13.5px; color: #4A7A63; margin-bottom: 26px;">Last updated: 29 July 2026</div>
 
     <div style="background: rgba(66,156,106,0.08); border: 1px solid rgba(66,156,106,0.3); border-radius: 16px; padding: 18px 22px; margin-bottom: 44px; font-size: 15px; line-height: 1.7; color: #C6E6D4;">
-      <strong style="font-family: Outfit, sans-serif;">The short version:</strong> IqraFlow is offline-first. Your reading, streaks and stats live on your device. We don't run ads, we don't sell data, and we only sync the minimum needed to make shared khatms work.
+      <strong style="font-family: Outfit, sans-serif;">The short version:</strong> IqraFlow needs an account, and your reading syncs to it so it follows you across devices. The Quran itself is on your device, so reading works offline. We don't run ads, we don't sell data, and we never charge for anything.
     </div>
 
     <div style="display: flex; flex-direction: column; gap: 38px; font-size: 15.5px; line-height: 1.75; color: #9CC4AD;">
       <div>
-        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">1. What stays on your device</h2>
-        <p style="margin: 0;">Everything about your personal practice: reading position and history, daily targets, streaks and grace tokens, hasanat counts, bookmarks, favourites, notes, khatm progress, and settings. This data is stored locally and never leaves your device unless you join a shared khatm or enable a backup.</p>
+        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">1. What we collect</h2>
+        <p style="margin: 0;">IqraFlow collects only what it needs to work:</p>
+        <p style="margin: 12px 0 0;"><strong style="color: #C6E6D4;">Account information</strong> - your email address, first name, surname, country and gender, given when you sign up. You can sign up with an email and password, or with Google or Apple.</p>
+        <p style="margin: 10px 0 0;"><strong style="color: #C6E6D4;">Reading data</strong> - your reading progress, bookmarks and notes, daily reading streaks, hasanat counts and reading statistics, saved to your account so you can continue on any device.</p>
+        <p style="margin: 10px 0 0;"><strong style="color: #C6E6D4;">Khatm data</strong> - the khatms you create or join.</p>
+        <p style="margin: 10px 0 0;"><strong style="color: #C6E6D4;">Feedback</strong> - anything you send us through the in-app report or feedback form.</p>
       </div>
       <div>
         <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">2. Shared khatms</h2>
-        <p style="margin: 0;">Shared khatms need a small amount of synced data: the khatm's name, your chosen display name, your claimed portion, and your progress within it (verse counts - never the content of your notes). This is visible only to people who have the khatm's invite code. Leave a khatm and your entry is removed from the group.</p>
+        <p style="margin: 0;">If you join a shared khatm, the other members of that khatm can see your display name and your reading progress within it - the portion you have claimed and how much of it you have read. They never see your notes, your other khatms, or anything else about your account. Leave a khatm and your entry is removed from the group.</p>
       </div>
       <div>
-        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">3. No accounts required</h2>
-        <p style="margin: 0;">You can use every core feature without creating an account. Joining a shared khatm generates an anonymous identifier on your device; it is not linked to your name, email, or phone number.</p>
+        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">3. Where your data lives</h2>
+        <p style="margin: 0;">Your account and its data are stored on Supabase (PostgreSQL), hosted in the EU (eu-west-1), protected by row-level security so that only you can read your own rows. Your password is never stored on our servers - authentication is handled by Supabase Auth.</p>
+        <p style="margin: 12px 0 0;">If you turn on biometric quick sign-in, your sign-in details are kept only on your own device, in the operating system's secure keychain behind Face ID / Touch ID / your device unlock. They never leave the device, and they are erased when you sign out or switch accounts.</p>
+        <p style="margin: 12px 0 0;">The Quran text, translations, transliteration and word-by-word meanings ship inside the app, so reading itself works with no connection at all.</p>
       </div>
       <div>
-        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">4. Audio downloads</h2>
-        <p style="margin: 0;">Recitation audio is fetched from our content delivery network when you download a surah or reciter. These requests include standard technical information (IP address, device type) used only to serve the files; we do not build profiles from them.</p>
+        <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">4. Services we rely on</h2>
+        <p style="margin: 0;">IqraFlow sends requests to a small number of third parties, only ever to deliver content you asked for:</p>
+        <p style="margin: 12px 0 0;"><strong style="color: #C6E6D4;">Supabase</strong> - accounts, database and sync.<br><strong style="color: #C6E6D4;">Quran.com API (api.quran.com)</strong> - extra translations, tafseer and recitation metadata.<br><strong style="color: #C6E6D4;">EveryAyah and QuranicAudio</strong> - recitation audio files.</p>
+        <p style="margin: 12px 0 0;">Those requests carry standard technical information such as your IP address and device type, used only to serve the files. We do not build profiles from them, and we do not sell your data to anyone.</p>
       </div>
       <div>
         <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">5. Notifications</h2>
@@ -74,11 +82,11 @@
       </div>
       <div>
         <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">8. Children</h2>
-        <p style="margin: 0;">IqraFlow is suitable for all ages. Because we collect no personal data by default, children can use the app safely. Shared khatm display names are chosen freely - we recommend families choose them together.</p>
+        <p style="margin: 0;">IqraFlow is not directed at children under 13, and we do not knowingly collect personal information from them. Shared khatm display names are visible to the other members of that khatm - we recommend families choose them together.</p>
       </div>
       <div>
         <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">9. Your rights &amp; contact</h2>
-        <p style="margin: 0;">You can delete all local data by deleting the app, and remove any synced khatm data from inside the app. For anything else - questions, deletion requests, concerns - email <a href="mailto:privacy@iqraflow.app">privacy@iqraflow.app</a>. We'll reply within 30 days.</p>
+        <p style="margin: 0;">You can see, correct or delete your data at any time. Deleting your account from inside the app removes your account and everything attached to it. For anything else - questions, deletion requests, concerns - email <a href="mailto:support@iqraflow.app">support@iqraflow.app</a>. We'll reply within 30 days.</p>
       </div>
       <div>
         <h2 style="margin: 0 0 12px; font-family: Outfit, sans-serif; font-weight: 700; font-size: 22px; color: #E8F5EE;">10. Changes</h2>

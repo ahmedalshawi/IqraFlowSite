@@ -1,0 +1,4 @@
+# Expo Router is a single-page app: every route has to fall back to index.html
+# or a deep link (app.iqraflow.app/read/2/2, an OAuth callback) would 404 on a
+# hard refresh. 200 = rewrite, not redirect, so the URL is preserved.
+/*  /index.html  200
