@@ -166,7 +166,7 @@
         <a href="#features" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">Inside the app</a>
         <a href="#tajweed" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">Tajweed</a>
         <a href="#khatms" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">Shared khatms</a>
-        <a href="#faq" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">FAQ</a>
+        <a href="#sign-in" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">Signing in</a><a href="#faq" class="iq-navlink" style="font-size: 14px; font-weight: 500; color: #7AB396;">FAQ</a>
       </div>
       <div style="display: flex; align-items: center; gap: 10px;">
         <a class="iq-nav-cta" href="#cta" style="font-family: Outfit, sans-serif; font-weight: 600; font-size: 14px; color: #0D1B15; background: #56B882; padding: 10px 20px; border-radius: 999px;">Get early access</a>
@@ -193,7 +193,16 @@
           <span style="width: 6px; height: 6px; border-radius: 50%; background: #F0C050;"></span>
           <span style="font-family: Outfit, sans-serif; font-weight: 600; font-size: 11.5px; letter-spacing: 1.6px; color: #F0C050;">WEB APP LIVE NOW · iOS + ANDROID COMING SOON</span>
         </div>
-        <h1 class="iq-h1" style="margin: 0 0 22px; font-family: Outfit, sans-serif; font-weight: 800; font-size: 74px; line-height: 1.02; letter-spacing: -2.5px; color: #E8F5EE;">IqraFlow<span style="display: block; font-size: 40px; line-height: 1.1; letter-spacing: -1.2px; margin-top: 10px; color: #C6E6D4;">The Quran, every single <span style="background: linear-gradient(92deg, #56B882 10%, #F0C050 90%); -webkit-background-clip: text; background-clip: text; color: transparent;">day.</span></span></h1>
+        <!-- The h1 holds THE APP NAME AND NOTHING ELSE. The tagline used to be a
+             nested span inside it, so the h1's text content read
+             "IqraFlowThe Quran, every single day." with no separator - and
+             Google's OAuth review rejected the app on exactly that check
+             ("the app name configured for your OAuth consent screen does not
+             match the app name on your home page"). The tagline is now a
+             sibling with the same type, so nothing moves on screen. Keep them
+             separate. -->
+        <h1 class="iq-h1" style="margin: 0; font-family: Outfit, sans-serif; font-weight: 800; font-size: 74px; line-height: 1.02; letter-spacing: -2.5px; color: #E8F5EE;">IqraFlow</h1>
+        <div class="iq-h1" aria-hidden="false" style="margin: 10px 0 22px; font-family: Outfit, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; letter-spacing: -1.2px; color: #C6E6D4;">The Quran, every single <span style="background: linear-gradient(92deg, #56B882 10%, #F0C050 90%); -webkit-background-clip: text; background-clip: text; color: transparent;">day.</span></div>
         <p class="iq-lead" style="margin: 0 0 22px; font-size: 18px; line-height: 1.65; color: #7AB396; max-width: 480px; text-wrap: pretty;"><strong style="color: #C6E6D4; font-weight: 600;">IqraFlow is a free Quran reading app.</strong> It shows the Quran in the Madinah mushaf script with tajweed colours, word-by-word translation and 125+ translations, tracks your daily reading, streaks and statistics, plays recitation from 15 reciters, and runs shared khatms so a group can finish the Quran together. It works offline, and it is free - no ads, no subscriptions, no payments of any kind.</p>
         <p class="iq-lead" style="margin: 0 0 30px; font-size: 15px; line-height: 1.6; color: #4A7A63; max-width: 480px;">You sign in with an email address, Google or Apple, so your reading progress, bookmarks and khatms follow you across every device. Once the Quran is on your device it reads offline.</p>
         <div style="margin: 0 0 30px;">
@@ -708,6 +717,26 @@
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- ══════════════ SIGN-IN / OAUTH DISCLOSURE ══════════════
+       Written for Google's OAuth verification review, which rejected the app
+       with "your home page does not explain the purpose of your app". The page
+       described the reading experience at length but never said what IqraFlow
+       is, that it offers Google sign-in, which Google data it asks for, or what
+       it does with it. That is what this section states plainly, in the app's
+       own name, with the privacy policy one click away. It is also a fair thing
+       to tell a reader before they hand over an account. -->
+  <div id="sign-in" data-screen-label="Sign in with Google" class="iq-container iq-section" style="max-width: 860px; margin: 0 auto; padding: 110px 40px 0; scroll-margin-top: 70px;">
+    <div data-reveal="" style="background: #0C1912; border: 1px solid #1E3328; border-radius: 22px; padding: 38px 40px;">
+      <div style="font-family: Outfit, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2.4px; color: #F0C050; margin-bottom: 14px;">SIGNING IN</div>
+      <h2 class="iq-h2" style="margin: 0 0 18px; font-family: Outfit, sans-serif; font-weight: 800; font-size: 34px; letter-spacing: -1px; color: #E8F5EE; line-height: 1.15;">What IqraFlow is, and what it asks of your Google account</h2>
+      <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: #7AB396;"><strong style="color: #C6E6D4; font-weight: 600;">IqraFlow is a free Quran reading app.</strong> It is live on the web at <a href="https://app.iqraflow.app" style="color: #56B882;">app.iqraflow.app</a>, with iOS and Android apps to follow. It shows the Quran in the Madinah mushaf script with tajweed colouring and word-by-word translation, records how much you read each day, keeps a streak, and lets a group split the Quran between them in a shared khatm.</p>
+      <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: #7AB396;">IqraFlow needs an account so that your reading position, bookmarks, statistics and khatms follow you from one device to the next. You can create that account with an email address and password, with <strong style="color: #C6E6D4; font-weight: 600;">Sign in with Google</strong>, or with Sign in with Apple.</p>
+      <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: #7AB396;">Choosing Sign in with Google asks Google only for the basic sign-in scopes - <strong style="color: #C6E6D4; font-weight: 600;">openid</strong>, <strong style="color: #C6E6D4; font-weight: 600;">userinfo.email</strong> and <strong style="color: #C6E6D4; font-weight: 600;">userinfo.profile</strong>. Between them they tell IqraFlow your Google account identifier, your email address and your name. The identifier is what links you to your own reading data, the email address is how we reach you about your account and how you recover it, and your name is what the other readers in a shared khatm see beside the part you have taken.</p>
+      <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: #7AB396;">IqraFlow asks for nothing else. It requests no access to Gmail, Drive, Contacts, Calendar or any other Google service, and it never posts anything on your behalf. Your reading data is never sold and is never used for advertising: there are no ads and no third-party advertising or analytics SDKs in the app. You can delete your account, and everything in it, from Settings at any time.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #7AB396;">Full detail is in the <a href="/privacy" style="color: #56B882; font-weight: 600;">privacy policy</a> and the <a href="/terms" style="color: #56B882;">terms of use</a>. Questions go to <a href="mailto:support@iqraflow.app" style="color: #56B882;">support@iqraflow.app</a>.</p>
     </div>
   </div>
 
