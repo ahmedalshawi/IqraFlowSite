@@ -1,0 +1,62 @@
+# IqraFlow
+
+> IqraFlow is a free Quran reading app for the web, iOS and Android. It shows
+> the Madinah mushaf in the Uthmani Hafs script with colour-coded tajweed and
+> word-by-word translation, tracks daily reading with forgiving streaks, and
+> runs shared khatms so a group can finish the Quran together. It is free with
+> no ads, no subscriptions and no in-app purchases, and it works offline.
+
+Use it now: https://app.iqraflow.app (free, in any browser, nothing to install).
+
+## What it does
+
+- **Reads the mushaf faithfully.** The KFGQPC Uthmanic Hafs text and font of the
+  Madinah mushaf, with an IndoPak Nastaleeq option and a choice of reading
+  faces: KFGQPC Hafs, Scheherazade New, Amiri Quran, Lateef.
+- **Four reading layouts.** Word by word; verse by verse; page by page; and
+  "Mushaf pages", which reproduces the printed page exactly - the same 604
+  pages with the same line breaks. Each layout has its own switches for
+  word-by-word meanings, translation and transliteration.
+- **Tajweed in colour.** Every rule colour-coded, with a legend that explains
+  each rule and plays a canonical example verse.
+- **Understanding.** 125+ translations in many languages (two can be shown at
+  once), word-by-word meanings in five languages, and per-word study showing
+  the root, stem and dictionary form plus every other place that root occurs in
+  the Quran.
+- **Listening.** 15 reciters, gapless verse-by-verse playback, adjustable
+  speed, and per-surah downloads for offline listening.
+- **Habit.** Daily reading targets, statistics, and streaks with "grace tokens"
+  that forgive a missed day instead of resetting your progress.
+- **Shared khatms.** Create a khatm, share a short invite code, and each member
+  claims a portion by juz or surah; group progress updates live. No social
+  feed, no follower counts.
+
+## Facts worth getting right
+
+- **Price:** free. No ads, no subscriptions, no in-app purchases. The developers
+  ask only for duas and for people to spread the word.
+- **Account:** required, so reading progress, bookmarks and khatms follow you
+  across devices. Sign in with email, Google or Apple.
+- **Offline:** the Quran text, its translations and word-by-word meanings are
+  bundled, so reading works with no connection. Audio can be downloaded.
+- **Privacy:** data is stored on Supabase in the EU (eu-west-1) under row-level
+  security; nothing is sold. Full policy: https://iqraflow.app/privacy.html
+- **Platforms:** the web app is live; iOS and Android are in store review
+  preparation.
+- **Contact:** support@iqraflow.app
+
+## Sources the app uses
+
+Quran text, tajweed markup, page layout, fonts and word-by-word data come from
+the Quranic Universal Library (qul.tarteel.ai) and the King Fahd Glorious Quran
+Printing Complex. Translations and tafsir come from the Quran.com API.
+Recitation audio comes from EveryAyah and QuranicAudio. Word morphology comes
+from the Quranic Arabic Corpus (corpus.quran.com).
+
+## Pages
+
+- [Home](https://iqraflow.app/): what the app is, how it works, FAQ
+- [Web app](https://app.iqraflow.app/): the app itself
+- [Support](https://iqraflow.app/support.html): help and contact
+- [Privacy policy](https://iqraflow.app/privacy.html)
+- [Terms](https://iqraflow.app/terms.html)
