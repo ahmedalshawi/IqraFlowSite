@@ -1,3 +1,3 @@
 ﻿# Expo Router is a single-page app: every route falls back to index.html or a
-# deep link (app.iqraflow.app/read/2/2, an OAuth callback) 404s on refresh.
+# deep link (web.iqraflow.app/read/2/2, an OAuth callback) 404s on refresh.
 /*  /index.html  200
