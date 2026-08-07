@@ -6,7 +6,7 @@
 > runs shared khatms so a group can finish the Quran together. It is free with
 > no ads, no subscriptions and no in-app purchases. In the iOS and Android apps the Quran ships on-device, so reading works offline; progress syncs across devices.
 
-Use it now: https://app.iqraflow.app (free, in any browser, nothing to install).
+Use it now: https://web.iqraflow.app (free, in any browser, nothing to install).
 
 ## What it does
 
@@ -56,7 +56,7 @@ from the Quranic Arabic Corpus (corpus.quran.com).
 ## Pages
 
 - [Home](https://iqraflow.app/): what the app is, how it works, FAQ
-- [Web app](https://app.iqraflow.app/): the app itself
+- [Web app](https://web.iqraflow.app/): the app itself
 - [Support](https://iqraflow.app/support.html): help and contact
 - [Privacy policy](https://iqraflow.app/privacy.html)
 - [Terms](https://iqraflow.app/terms.html)
